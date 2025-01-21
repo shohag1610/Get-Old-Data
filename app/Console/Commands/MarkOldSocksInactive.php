@@ -19,6 +19,7 @@ class MarkOldSocksInactive extends Command
     public function handle()
     {
         $cutoffDate = Carbon::now()->subYears(2);
+
         $oldProducts = Product::whereHas('category', function ($query) {
             $query->where('name', 'Socks');
         })->where('created_at', '<', $cutoffDate)
