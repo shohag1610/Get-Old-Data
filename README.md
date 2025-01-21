@@ -1,4 +1,4 @@
-# Shopping List Application
+# Make Command to Modify Database
 
 A Laravel-based application for updating product active status by Command line interface
 
